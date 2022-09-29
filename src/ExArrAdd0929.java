@@ -33,6 +33,7 @@ public class ExArrAdd0929 {
         }
 
         //数组拷贝:如果是需要插入的位置,则j不自增,i自增
+        // 【难点】需要想到使用两个变量i和j,且需要变量自增的位置,从而实现插入的功能
         for (int i = 0, j = 0; i < newArr.length; i++) {
             if (i == index) {
                 newArr[i] = insertNum;
